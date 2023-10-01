@@ -1,0 +1,28 @@
+
+jmeno = "František"
+domena = "@czechitas.cz"
+print(jmeno + domena )
+
+#zadání jména, příjmení
+jmeno1 = (input("Zadej jméno uživatele:"))
+prijmeni = (input("Zadej příjmení uživatele:"))
+inicialy = jmeno1[0] + prijmeni[0]
+print("inicialy:", inicialy.upper())
+print(jmeno1 .upper() + " " + prijmeni.upper())
+print(jmeno1 .lower() + " " + prijmeni.lower())
+print(jmeno1[0] .upper())
+print(prijmeni[0] .upper())
+print(jmeno1 .strip() + " " + prijmeni.strip())
+
+# alternativa
+jmeno_a_prijmeni = "František Smejkal"
+print(jmeno_a_prijmeni.upper())
+print(jmeno_a_prijmeni.lower())
+print(jmeno_a_prijmeni)
+
+#změny dle počtu písmen ve slovu
+if len(jmeno1) >= 5:
+    print(jmeno1[:5]+ " " + prijmeni.lower())
+elif len(jmeno1) < 5:
+    print(jmeno1[0] .upper() + jmeno1[1] .lower() + jmeno1[2] .upper() + jmeno1[3] .lower()+ " " + prijmeni.upper())
+
