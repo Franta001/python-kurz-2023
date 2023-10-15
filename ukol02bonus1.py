@@ -59,3 +59,18 @@ morse_code[" "] ="/"
 znak = input("Zadej znak: ")
 if znak in morse_code:
     print(morse_code[znak])
+
+'''
+komentar (M. Jurosz)
+Zadani mas splnene castecne, protoze se chtelo, aby uzivatel nezadal jeden znak ale celou vetu napriklad.
+Tedy melo by byt rozsireno o vnejsi cyklus, ktery slovo rozdeli na znaky a projde a pritom uklada jednotlive morseovy znaky a na konci vypise.
+Napr.
+text = input("Zadejte text: ")
+
+for pismeno in text:
+    if pismeno == " ":
+        print("/")
+    else:
+        print(morse_code[pismeno], end=" ")
+
+'''
